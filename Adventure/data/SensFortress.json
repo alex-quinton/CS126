@@ -1,0 +1,224 @@
+{
+  "startingRoom": "Atrium",
+  "endingRoom": "Anor Londo",
+  "player": {
+    "name": "Chosen Undead",
+    "itemsArray": [],
+    "attack": 1,
+    "defense": 1,
+    "health": 10,
+    "level": 1
+  },
+  "rooms": [
+    {
+      "name": "Entryway",
+      "description": "You find yourself at the entryway of Sen's Fortress",
+      "itemsArray": [
+        {
+          "name": "longsword",
+          "damage": 1
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "north",
+          "room": "Catwalk"
+        }
+      ],
+      "monstersInRoom":[
+        "Serpent Soldier",
+        "Serpent Soldier"
+      ]
+    },
+    {
+      "name": "Catwalk",
+      "description": "Ahead of you is a long catwalk with swinging axes in the way.",
+      "directions": [
+        {
+          "directionName": "north",
+          "room": "Staircase"
+        }
+      ],
+      "monstersInRoom": [
+        "Strong Serpent Soldier"
+      ]
+    },
+    {
+      "name": "Staircase",
+      "description": "You are at a staircase, with a hallway leading off tho the east",
+      "directions": [
+        {
+          "directionName": "up",
+          "room": "Second Catwalk"
+        },
+        {
+          "directionName": "east",
+          "room": "Dead End Hallway"
+        }
+      ]
+    },
+    {
+      "name": "Dead End Hallway",
+      "description": "This hallway leads to a dead end, but there's come treasure!",
+      "directions": [
+        {
+          "directionName": "west",
+          "room": "Staircase"
+        }
+      ],
+      "itemsArray": [
+        {
+          "name": "shotel",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Second Catwalk",
+      "description": "At the staircase landing is a second catwalk with swinging axes, and a serpent mage at the end of it",
+      "directions": [
+        {
+          "directionName": "east",
+          "room": "Outer Sen's Fortress"
+        },
+        {
+          "directionName": "down",
+          "room": "Staircase"
+        }
+      ],
+      "monstersInRoom":[
+        "Serpent Mage"
+      ]
+    },
+    {
+      "name": "Outer Sen's Fortress",
+      "description": "You are on the outer side of Sen's Fortress, standing on a long canal",
+      "directions": [
+        {
+          "directionName": "up",
+          "room": "Sen's Fortress Roof"
+        },
+        {
+          "directionName": "west",
+          "room": "Second Catwalk"
+        }
+      ],
+      "monstersInRoom":[
+        "Serpent Mage",
+        "Strong Serpent Soldier"
+      ]
+    },
+    {
+      "name": "Sen's Fortress Roof",
+      "description": "You are on the roof of Sen's Fortress",
+      "directions": [
+        {
+          "directionName": "north",
+          "room": "Iron Golem Arena"
+        },
+        {
+          "directionName": "up",
+          "room": "Bomb Giant Room"
+        },
+        {
+          "directionName": "down",
+          "room": "Outer Sen's Fortress"
+        }
+      ],
+      "monstersInRoom":[
+        "Balder Rapier Knight",
+        "Balder Crossbow Knight"
+      ]
+    },
+    {
+      "name": "Bomb Giant Room",
+      "description": "You climb up a staircase and find a giant who's been throwing bombs at you!",
+      "directions": [
+        {
+          "directionName": "down",
+          "room": "Sen's Fortress Roof"
+        }
+      ],
+      "itemsArray": [
+        {
+          "name": "Chaos Zweihander",
+          "damage": 20
+        }
+      ],
+      "monstersInRoom":[
+        "Bomb Giant"
+      ]
+    },
+    {
+      "name": "Iron Golem Arena",
+      "description": "You have made it to the top of Sen's Fortress, and now must defeat the Iron Golem!",
+      "directions": [
+        {
+          "directionName": "down",
+          "room": "Sen's Fortress Roof"
+        },
+        {
+          "directionName": "west",
+          "room": "Anor Londo"
+        }
+      ],
+      "monstersInRoom":[
+        "Iron Golem"
+      ]
+    },
+    {
+      "name": "Anor Londo",
+      "description": "You have made it to Anor Londo, the legendary city of the gods!",
+      "directions": [
+        {
+          "directionName": "east",
+          "room": "Iron Golem Arena"
+        }
+      ]
+    }
+  ],
+  "monsters":[
+    {
+      "name": "Serpent Soldier",
+      "health": 2,
+      "attack": 2,
+      "defense": 0
+    },
+    {
+      "name": "Strong Serpent Soldier",
+      "health": 6,
+      "attack": 3,
+      "defense": 1
+    },
+    {
+      "name": "Serpent Mage",
+      "health": 5,
+      "attack": 5,
+      "defense": 1
+    },
+    {
+      "name": "Balder Rapier Knight",
+      "health": 12,
+      "attack": 5,
+      "defense": 2
+    },
+    {
+      "name": "Balder Crossbow Knight",
+      "health": 6,
+      "attack": 7,
+      "defense": 3
+    },
+    {
+      "name": "Bomb Giant",
+      "health": 24,
+      "attack": 10,
+      "defense": 2
+    },
+    {
+      "name": "Iron Golem",
+      "health": 40,
+      "attack": 20,
+      "defense": 10
+    }
+  ]
+}

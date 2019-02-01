@@ -1,0 +1,95 @@
+{
+  "startingRoom": "Corridor Entry",
+  "endingRoom": "Corridor Exit",
+  "player": {
+    "name": "Alex",
+    "itemsArray": [],
+    "attack": 1,
+    "defense": 1,
+    "health": 10,
+    "level": 1
+  },
+  "rooms": [
+    {
+      "name": "Corridor Entry",
+      "description": "You find yourself at the end of a long corridor",
+      "directions": [
+        {
+          "directionName": "north",
+          "room": "Corridor Midsection"
+        }
+      ]
+    },
+    {
+      "name": "Corridor Midsection",
+      "description": "You find yourself at the midsection of a long corridor",
+      "itemsArray": [
+        {
+          "name": "sword",
+          "damage": 1
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "north",
+          "room": "Atrium"
+        },
+        {
+          "directionName": "south",
+          "room": "Corridor Entry"
+        }
+      ],
+      "monstersInRoom": [
+        "skeleton"
+      ]
+    },
+    {
+      "name": "Atrium",
+      "description": "You find yourself at the midsection of a long corridor",
+      "itemsArray": [
+        {
+          "name": "coin",
+          "damage": 0
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "north",
+          "room": "Corridor Exit"
+        },
+        {
+          "directionName": "south",
+          "room": "Corridor Midsection"
+        }
+      ],
+      "monstersInRoom": [
+        "skeleton",
+        "knight"
+      ]
+    },
+    {
+      "name": "Corridor Exit",
+      "description": "You find yourself at the exit of a long corridor",
+      "directions": [
+        {
+          "directionName": "south",
+          "room": "Atrium"
+        }
+      ]
+    }
+  ],
+  "monsters":[
+    {
+      "name": "skeleton",
+      "health": 3,
+      "attack": 2,
+      "defense": 0
+    },
+    {
+      "name": "knight",
+      "health": 3,
+      "attack": 2,
+      "defense": 2
+    }
+  ]
+}
