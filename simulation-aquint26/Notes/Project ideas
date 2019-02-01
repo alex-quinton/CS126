@@ -1,0 +1,63 @@
+Main Idea: Project simulates the process of evolution
+
+Each location is populated with animals that must mate in order to adapt to their environment
+There are different types of animals that have different base stats, but over time they will evolve to suit their environment
+
+Locations have several stats
+
+humidity:     Dry --------------- Humid
+temperature: Cold --------------- Hot
+water:     little --------------- lots
+plants:    barren --------------- lush
+also have base survival chance stat
+
+Every location has a rain() and disaster() method that modifies the stats of the location somewhat for the next epoch
+e.x. decreases temperature in mountain, changes base survival odds
+
+Every epoch, the chance of each animal surviving is calculated based on how well their traits suit the environment
+The survivors then breed in order to produce another generation
+
+The player is responsible for creating locations, and can add animals if they choose
+
+People are another type of thing, and every epoch they have a chance of adopting an animal (guarantees survival)
+or killing an animal(guarantees death). Every epoch, each human randomizes disposition, changing their odds of adopting/killing
+
+Location types:
+savanna-
+-low humidity
+-high temperature
+-little water
+-barren plants
+chance of fire each epoch
+
+Jungle-
+-high humidity
+-high temperature
+-lots of water
+-lush plants
+chance to flood each epoch
+
+Forest-
+-medium humidity
+-medium temperature
+-medium water
+-lush plants
+chance of storm each epoch
+
+Tundra-
+-low humidity
+-low temperature
+-medium water
+-medium plants
+chance of blizzard each epoch
+
+Class Structure:
+
+Locations-
+double-Humidity
+double-Temperature
+double-Water
+double-Plants
+ArrayList<Animal> animals: the animals in that location
+function-nextEpoch: calls nextEpoch on all the animals
+
